@@ -47,6 +47,7 @@ db.collection("main").orderBy("timestamp", "asc")
                 var newLink = document.createElement("a");
                 newLink.innerHTML = link;
                 newLink.href = link;
+                newLink.target = "_blank";
 
                 var list = document.getElementById("list");
                 list.prepend(newLink);
