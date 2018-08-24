@@ -40,7 +40,6 @@ db.collection("main").orderBy("timestamp", "asc")
     .onSnapshot(function(snapshot) {
         snapshot.docChanges().forEach(function(change) {
             if (change.type === "added") {
-                //console.log(change.doc.id, " => ", change.doc.data());
 
                 var link = change.doc.data().link;
 
